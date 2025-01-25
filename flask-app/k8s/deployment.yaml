@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: flask-app
-        image: apple1002/flask-app-green:1.0 # Start with green
+        image: apple1002/flask-app-red:1.0 # Start with green
         ports:
         - containerPort: 5000

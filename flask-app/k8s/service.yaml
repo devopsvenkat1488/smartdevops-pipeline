@@ -1,13 +1,24 @@
-apiVersion: v1
-kind: Service
-metadata:
-  name: flask-app-service
-  namespace: testing
-spec:
-  selector:
-    app: flask-app
-  ports:
-  - protocol: TCP
-    port: 80
-    targetPort: 5000
-  type: NodePort
+service:
+  name: harness_flaskapp
+  identifier: harnessflaskapp
+  serviceDefinition:
+    type: Kubernetes
+    spec:
+      manifests:
+      - manifest:
+          identifier: flaskapp
+          type: K8sManifest
+          spec:
+            store:
+              type: Github
+              spec:
+                connectorRef: harnessgitconnector
+                gitFetchType: Branch
+                paths:
+                - guestbook/flaskapp-deployment.yaml
+                - guestbook/flaskapp-svc.yaml
+                repoName: smartdevops-pipeline
+                branch: master
+              skipResourceVersioning: false
+              enableDeclarativeRollback: false
+  gitOpsEnabled: false

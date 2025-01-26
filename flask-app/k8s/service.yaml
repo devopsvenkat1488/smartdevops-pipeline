@@ -18,7 +18,7 @@ service:
                 - flask-app/k8s/flaskapp-deployment.yaml
                 - flask-app/k8s/flaskapp-svc.yaml
                 repoName: smartdevops-pipeline
-                branch: master
+                branch: main
               skipResourceVersioning: false
               enableDeclarativeRollback: false
   gitOpsEnabled: false

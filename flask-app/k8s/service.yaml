@@ -15,8 +15,8 @@ service:
                 connectorRef: harnessgitconnector
                 gitFetchType: Branch
                 paths:
-                - guestbook/flaskapp-deployment.yaml
-                - guestbook/flaskapp-svc.yaml
+                - k8s/flaskapp-deployment.yaml
+                - k8s/flaskapp-svc.yaml
                 repoName: smartdevops-pipeline
                 branch: master
               skipResourceVersioning: false

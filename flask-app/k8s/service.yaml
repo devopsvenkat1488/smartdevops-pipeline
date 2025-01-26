@@ -15,8 +15,8 @@ service:
                 connectorRef: gitflaskappconnector
                 gitFetchType: Branch
                 paths:
-                - flask-app/k8s/flaskapp-deployment.yaml
-                - flask-app/k8s/flaskapp-svc.yaml
+                - guestbook/flaskapp-deployment.yaml
+                - guestbook/flaskapp-svc.yaml
                 repoName: smartdevops-pipeline
                 branch: main
               skipResourceVersioning: false

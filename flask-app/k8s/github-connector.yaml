@@ -3,7 +3,7 @@ connector:
   identifier: harnessgitconnector
   description: ""
   orgIdentifier: default
-  projectIdentifier: default_project
+  projectIdentifier: Venkat_Devops
   type: Github
   spec:
     url: https://github.com/GITHUB_USERNAME/smartdevops-pipeline.git

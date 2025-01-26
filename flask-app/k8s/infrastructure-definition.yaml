@@ -4,7 +4,7 @@ infrastructureDefinition:
   description: ""
   tags: {}
   orgIdentifier: default
-  projectIdentifier: default_project
+  projectIdentifier: Venkat_Devops
   environmentRef: harnessdevenv
   deploymentType: Kubernetes
   type: KubernetesDirect

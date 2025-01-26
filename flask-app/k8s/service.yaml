@@ -12,7 +12,7 @@ service:
             store:
               type: Github
               spec:
-                connectorRef: gitflaskappconnector
+                connectorRef: harness_gitconnector
                 gitFetchType: Branch
                 paths:
                 - guestbook/flaskapp-deployment.yaml

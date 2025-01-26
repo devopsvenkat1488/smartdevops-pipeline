@@ -1,7 +1,7 @@
 pipeline:
   name: flaskapp_canary_pipeline
   identifier: flaskapp_canary_pipeline
-  projectIdentifier: default_project
+  projectIdentifier: Venkat_Devops
   orgIdentifier: default
   tags: {}
   stages:

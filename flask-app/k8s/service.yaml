@@ -16,7 +16,7 @@ service:
                 gitFetchType: Branch
                 paths:
                 - flask-app/k8s/flaskapp-deployment.yaml
-                - flask-app/k8s/guestbook/flaskapp-svc.yaml
+                - flask-app/k8s/flaskapp-svc.yaml
                 repoName: smartdevops-pipeline
                 branch: master
               skipResourceVersioning: false

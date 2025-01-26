@@ -12,7 +12,7 @@ service:
             store:
               type: Github
               spec:
-                connectorRef: harnessgitconnector
+                connectorRef: gitflaskappconnector
                 gitFetchType: Branch
                 paths:
                 - flask-app/k8s/flaskapp-deployment.yaml
